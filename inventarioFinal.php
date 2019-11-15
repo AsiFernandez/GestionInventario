@@ -15,14 +15,14 @@ if (isset($_SESSION['inventario'])) {
   <title>Gestor de Inventario</title>
 </head>
 <body>
-
+<h1> Gestion de Inventario </h1>
 <!-- estructura del formulario -->
   <form method="post" action="#">
-    Codigo: <input type="text" name="codigo" required>
+    Codigo: <input type="text" name="codigo"  value="<?php $_POST['codigo'] ?> " required>
     <br><br>
-    Descripcion: <input type="text" name="descripcion">
+    Descripcion: <input type="text" name="descripcion" value="<?php $_POST['codigo'] ?> ">
     <br><br>
-    Stock: <input type="text" name="stock">
+    Stock: <input type="text" name="stock" value="<?php $_POST['codigo'] ?> ">
     <br><br>
     <input type="submit" value="Añadir producto al inventario" name="enviar">
   </form>
